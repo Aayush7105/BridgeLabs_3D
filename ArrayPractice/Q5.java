@@ -1,5 +1,8 @@
+import java.util.*;
+
 public class Q5 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         boolean isSorted = true;
         int arr[]=new int [n];
         System.out.println("Enter elements :");
