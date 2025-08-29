@@ -29,6 +29,5 @@ public class ques1 {
         System.out.println("Manual check (charAt): " + same);
         System.out.println("Built-in equals(): " + equalsResult);
 
-        sc.close();
     }
 }
