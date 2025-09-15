@@ -16,6 +16,7 @@ public abstract class Vehicle {
         System.out.println("Type: " + type);
         System.out.println("Rental Rate per day: " + rentalRate);
     }
+
     public String getVehicleNumber() {
         return vehicleNumber;
     }

@@ -13,7 +13,7 @@ public class RideHailingApp {
         vehicles.add(bike);
         vehicles.add(auto);
 
-        double distance = 12.5; // Distance for which fare is calculated
+        double distance = 12.5; 
 
         for (Vehicle vehicle : vehicles) {
             vehicle.getVehicleDetails();
