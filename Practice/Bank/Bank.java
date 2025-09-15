@@ -1,16 +1,14 @@
 public class Bank {
     private long accountNumber;
-    private User accountHolder;   // 👈 Link to User
+    private User accountHolder;   
     private double balance;
 
-    // Constructor
     public Bank(long accountNumber, User accountHolder, double balance) {
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
         this.balance = balance;
     }
 
-    // Getters & Setters
     public long getAccountNumber() {
         return accountNumber;
     }
@@ -37,10 +35,6 @@ public class Bank {
 
     @Override
     public String toString() {
-        return "Bank{" +
-                "accountNumber=" + accountNumber +
-                ", accountHolder=" + accountHolder +
-                ", balance=" + balance +
-                '}';
+        return "Bank{" +"accountNumber=" + accountNumber +", accountHolder=" + accountHolder +", balance=" + balance +'}';
     }
 }
