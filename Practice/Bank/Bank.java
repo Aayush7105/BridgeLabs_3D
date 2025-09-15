@@ -1,33 +1,30 @@
-
 public class Bank {
-
-    private int accountNumber;
-    private String accountHolderName;
+    private long accountNumber;
+    private User accountHolder;   // 👈 Link to User
     private double balance;
 
-    public Bank() {
-    }
-
-    public Bank(int accountNumber, String accountHolderName, double balance) {
+    // Constructor
+    public Bank(long accountNumber, User accountHolder, double balance) {
         this.accountNumber = accountNumber;
-        this.accountHolderName = accountHolderName;
+        this.accountHolder = accountHolder;
         this.balance = balance;
     }
 
-    public int getAccountNumber() {
+    // Getters & Setters
+    public long getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(long accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    public String getAccountHolderName() {
-        return accountHolderName;
+    public User getAccountHolder() {
+        return accountHolder;
     }
 
-    public void setAccountHolderName(String accountHolderName) {
-        this.accountHolderName = accountHolderName;
+    public void setAccountHolder(User accountHolder) {
+        this.accountHolder = accountHolder;
     }
 
     public double getBalance() {
@@ -38,26 +35,12 @@ public class Bank {
         this.balance = balance;
     }
 
-    public void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-        }
-    }
-
-    public boolean withdraw(double amount) {
-        if (amount > 0 && amount <= balance) {
-            balance -= amount;
-            return true;
-        }
-        return false;
-    }
-
     @Override
     public String toString() {
-        return "Bank{"
-                + "accountNumber=" + accountNumber
-                + ", accountHolderName='" + accountHolderName + '\''
-                + ", balance=" + balance
-                + '}';
+        return "Bank{" +
+                "accountNumber=" + accountNumber +
+                ", accountHolder=" + accountHolder +
+                ", balance=" + balance +
+                '}';
     }
 }
