@@ -1,4 +1,3 @@
-package TransportBooking;
 
 public abstract class Vehicle {
     protected double speed;

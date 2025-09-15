@@ -1,4 +1,3 @@
-package TransportBooking;
 
 public class SimpleFareCalculator implements FareCalculator {
     @Override

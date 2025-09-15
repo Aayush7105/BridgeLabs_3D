@@ -1,4 +1,3 @@
-package TransportBooking;
 
 public class Car extends Vehicle {
     public Car() {

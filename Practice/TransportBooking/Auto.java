@@ -1,4 +1,3 @@
-package TransportBooking;
 
 public class Auto extends Vehicle {
     public Auto() {
