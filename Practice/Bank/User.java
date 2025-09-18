@@ -1,8 +1,8 @@
 public class User {
     private String userName;
     private int age;
-    private long adharNumber;   // private
-    private String address;     // private
+    private long adharNumber;  
+    private String address;    
 
     public User(String userName, int age, long adharNumber, String address) {
         this.userName = userName;
